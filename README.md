@@ -18,11 +18,11 @@ So we can combine these to say the output of a logistic regression is --> sigma 
 We have this logistic function (Sigmoid function) at the end which gives us the number between 0 and 1. here we can say that anything which gives us a number above 0.5 gives us class 1 and anything below 0.5 gives us class 0. the value of sigmoid for input 0 is 0.5.
 
 # What does the output of Logistic regression actually means?
-![](Deep_learning_prerequisite/util_images/formula_logisticregression.jpg)
-The output of the logistic regression is a sigmoid. form the sigmoid we are going to get a number between 0 and 1. In deep learning it has a nice and intuitive interpretation.
-First let's recall what we are trying to do during classification.
+![](Deep_learning_prerequisite/util_images/formula_logisticregression.jpg).  
+##### The output of the logistic regression is a sigmoid. form the sigmoid we are going to get a number between 0 and 1. In deep learning it has a nice and intuitive interpretation.
+##### First let's recall what we are trying to do during classification.
 ![](Deep_learning_prerequisite/util_images/what_is_classification.jpg)
-We have some red dots and some blue dots and we have a line that separates them. Each dot is represented by a feature vector X and it's color or it's label is represented by a label Y. as per conventions Y has a value 0 or 1. here if Y=0 --> red if Y=1 --> blue.  
+##### We have some red dots and some blue dots and we have a line that separates them. Each dot is represented by a feature vector X and it's color or it's label is represented by a label Y. as per conventions Y has a value 0 or 1. here if Y=0 --> red if Y=1 --> blue.  
 ![](Deep_learning_prerequisite/util_images/output_logisticregression.jpg)
-The output of logistic regression is a number between 0 and 1, we interpret these as a probability that y=1 given x.
+##### The output of logistic regression is a number between 0 and 1, we interpret these as a probability that y=1 given x.
 ![](Deep_learning_prerequisite/util_images/output_interpretation.jpg)
