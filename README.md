@@ -7,6 +7,11 @@ Logistic regression can be seen as a model for the neuron. A combination of logi
 If our model only performs well on the training data not the test data we say that this model does not generalize well. So one way we can ensure that our model generalize well is to use regularization.
 # linear classification :
 ![](Deep_learning_prerequisite/util_images/linear_regression/linear_classification1.png)
+As you can see we have a bunch of x in the left and a bunch of o in the right and we would like to separate them by drawing a line in a 2D plane.
+equation of a line : <br>
+y=mx+b <br>
+0=ax+by+c <br>
+a=1, b=-1, c=0
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
