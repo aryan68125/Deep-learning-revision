@@ -1,7 +1,7 @@
 # What is Logistic regression : 
 Logistic regression is a base line model. If you can get away with logistic regression then you should, It is very interpretable and stable . You don't have to do a lot of tuning to find the solution unlike neural networks. It is also fast and it is well established having been studied by statistitians for many decades.
 ![](Deep_learning_prerequisite/util_images/logistic_regression/logistic_regression1.png)
-Logistic regression can be seen as a model for the neuron. A combination of logistic regression is a neural network.
+Logistic regression can be seen as a model for the neuron. A combination of logistic regression is a neural network. Logistic regression is a linear model. by using feature engineering we can build powerful non-linear logistic regression model.
 ![](Deep_learning_prerequisite/util_images/logistic_regression/logistic_regression2.png)
 # Performance interpretation of a model : 
 If our model only performs well on the training data not the test data we say that this model does not generalize well. So one way we can ensure that our model generalize well is to use regularization.
