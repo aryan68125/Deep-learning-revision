@@ -10,8 +10,9 @@ If our model only performs well on the training data not the test data we say th
 As you can see we have a bunch of x in the left and a bunch of o in the right and we would like to separate them by drawing a line in a 2D plane.
 equation of a line : <br>
 y=mx+b <br>
+Here y is the slope and b is the y intercept. <br>
 0=ax+by+c <br>
-a=1, b=-1, c=0
+you can see that if our x's and o's are split along a 45deg line that crosses the line y-intercept = 0 then ```a=1, b=-1, c=0``` should be the line. 
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
