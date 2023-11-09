@@ -1,5 +1,5 @@
 # What is Logistic regression : 
-![](Deep_learning_prerequisite/util_images/logistic regression/logistic_regression1.png)
+![](Deep_learning_prerequisite/util_images/logistic_regression/logistic_regression1.png)
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
