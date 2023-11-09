@@ -1,3 +1,5 @@
+# What is Logistic regression : 
+![](Deep_learning_prerequisite/util_images/logistic regression/logistic_regression1.png)
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
@@ -26,3 +28,5 @@ We have this logistic function (Sigmoid function) at the end which gives us the 
 ![](Deep_learning_prerequisite/util_images/output_logisticregression.jpg)
 ##### The output of logistic regression is a number between 0 and 1, we interpret these as a probability that y=1 given x.
 ![](Deep_learning_prerequisite/util_images/output_interpretation.jpg)
+##### And so this gives us a handy way of making predictions. If p(y=1 | x) > p(y=0 | x): predict class 1 ,else: predict class 0.  
+
