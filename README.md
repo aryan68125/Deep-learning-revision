@@ -1,5 +1,8 @@
 # What is Logistic regression : 
+Logistic regression is a base line model. If you can get away with logistic regression then you should, It is very interpretable and stable . You don't have to do a lot of tuning to find the solution unlike neural networks. It is also fast and it is well established having been studied by statistitians for many decades.
 ![](Deep_learning_prerequisite/util_images/logistic_regression/logistic_regression1.png)
+Logistic regression can be seen as a model for the neuron : 
+![](Deep_learning_prerequisite/util_images/logistic_regression/logistic_regression2.png)
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
