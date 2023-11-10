@@ -35,5 +35,12 @@ def get_data():
    there people used to write 'df.as_matrix()' or 'df.values()' it all means the same
    i.e these all are converting a dataframe into a numpy array.
    '''
+   '''
+   Points to remember : 
+   avoid using np.asmatrix(df) if df.as_matrix() is not working these functions may look the same 
+   but reality they are not the same. The reason they are not the same is because 
+   df.as_matrix() --> does not return an actual matrix object it returns a numpy array
+   np.asmatrix(df) --> it returns an actual matrix
+   '''
    data = df.to_numpy()
 get_data()
