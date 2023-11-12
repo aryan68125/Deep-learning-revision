@@ -12,7 +12,10 @@ equation of a line : <br>
 y=mx+b <br>
 Here y is the slope and b is the y intercept. <br>
 0=ax+by+c <br>
-you can see that if our x's and o's are split along a 45deg line that crosses the line y-intercept = 0 then ```a=1, b=-1, c=0``` should be the line. 
+you can see that if our x's and o's are split along a 45deg line that crosses the line y-intercept = 0 then ```a=1, b=-1, c=0``` should be the line. So in other words our line is 0 = x-y.
+![](Deep_learning_prerequisite/util_images/linear_regression/linear_classification2.png)
+Let's say we have a test point h(2,1) --> x=2 and y=1 <br>
+if we plug that into the equation h(2,1) =1>0 --> therefore weshould classify this new test point as an 'o'.
 # How do we calculate the output of a neuron(Logistic Regression):
 Just link in a brain of any organism is a collection of neurons which is a building block of a brain in a similar fashon,
 a logistic regression is also a building black of a neural network.
