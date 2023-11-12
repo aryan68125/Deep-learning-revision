@@ -139,6 +139,7 @@ def get_data():
    since all the columns of our dataframes are numerical we are gonna do a simple
    method of pre-processing which is to standardize our columns also known as 
    normalization
+   NOTE : Here we are only notmalizing columns 1 and 2
    '''
    for i in range(1,2):
       m = xtrain[:,i].mean() #--> calculating the mean
