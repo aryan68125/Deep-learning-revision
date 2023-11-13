@@ -60,3 +60,31 @@ p_y_given_X is a one dimensional scalar value since multiplication of two vector
 '''
 print(f"P_Y_given_X values = {P_Y_given_X}")
 print(f"p_y_given_X shape = {P_Y_given_X.shape}")
+
+'''
+So here what we have created is a binary classifier so we want our predictions to be 0 or 1
+In order to do that we have to round these probabilities that we are getting from 
+the forward function. so if the probability is greater than 50% then we will say it's a 1
+otherwise we aill say it's a zero.
+'''
+predictions = np.round(P_Y_given_X)
+print(f"predictions = {predictions}")
+
+'''
+Let's check the classification rate of our model. 
+The function below will check the classification rate for our model
+The function takes in targets (Y) and Predictions
+np.mean(Y==P)
+Y == P it returns true if Y = P and if Y!= P then it returns false since we are 
+writing this inside a numpy array it will check the equality for each element in the array
+and return a numpy array with truth and false values in it.
+In python the values of true and false are treated as zeros and ones.
+So the classification rate if we had an array of zeros and ones, where one means the 
+prediction was right and zero means the prediction was not right. 
+the classification rate will be the number of ones divided by the total number of samples.
+'''
+def classification_rate(Y,P):
+    return np.mean(Y==P)
+
+classification_rate_values = classification_rate(Y,predictions)
+print(f"score = {classification_rate_values}")
