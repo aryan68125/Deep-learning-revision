@@ -94,3 +94,24 @@ def cross_entropy_error(T, Y):
     return E
 
 print(f"cross entropy error = {cross_entropy_error(T,Y)}")
+
+'''
+Now applying the closed form solution and see how good the solution is to this specific
+dataset.
+This closed form solution will work because we have equal variances in both classes.
+So the variance is one which is the default for a numpy random normal.
+And so the weights only depends on the means.
+'''
+W = np.array([0,4,4])
+
+Z = Xb.dot(W)
+
+Y = sigmoid(Z)
+
+print(f"cross_entropy_error = {cross_entropy_error(T,Y)}")
+
+'''
+cross entropy error = 73.80731685717876
+So you can see our cros entropy error is a lot lower when we use the closed form solution.
+cross_entropy_error = 0.48357516559917674
+'''
