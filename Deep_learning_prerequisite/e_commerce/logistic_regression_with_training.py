@@ -16,10 +16,12 @@ weight is a one dimensional vector of size D+1
 we will initialize the weights randomely from the standard normal distribution
 
 Remember : 
-X is of shape N by D and we want D whichs is the second dimension of the shape tuple.
+X is of shape N by D and we want D which is the second dimension of the shape tuple.
 D = Xtrain.shape[1]
 
-Then we are goind to create our randomly initialized our weight vector.
+Then we are going to create our randomly initialized our weight vector.
+
+NOTE here b = bias term that we are initializing with 0
 '''
 D = Xtrain.shape[1]
 W = np.random.randn(D)

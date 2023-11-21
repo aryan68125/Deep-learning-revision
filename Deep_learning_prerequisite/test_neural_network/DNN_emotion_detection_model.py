@@ -3,6 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.optimizers import Adam as adam
 
 # Assuming you have a dataset with labeled emotion images in separate folders for each emotion
 train_data_dir = 'training_dataset/train'
@@ -10,7 +11,7 @@ validation_data_dir = 'validation_dataset/test'
 
 # Image dimensions and other parameters
 img_width, img_height = 48, 48
-epochs = 100
+epochs = 10
 batch_size = 32
 
 # Build the neural network model
@@ -31,7 +32,8 @@ model.add(Dropout(0.5))
 model.add(Dense(7, activation='softmax'))  # Assuming 7 emotions (adjust based on your dataset)
 
 # Compile the model
-model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+# optimizer=tf.keras.optimizers.Adam(learning_rate=0.01)
+model.compile(optimizer=adam(learning_rate=0.01), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Data Augmentation (optional but can help improve model generalization)
 train_datagen = ImageDataGenerator(rescale=1./255,
