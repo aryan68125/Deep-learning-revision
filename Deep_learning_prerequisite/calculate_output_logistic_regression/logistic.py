@@ -9,13 +9,32 @@ D=2
 So I am gonna create a 100 by 2 normally distributed data matrix.
 Now we know we are gonna have to add a bias term.
 So in order to do that we are gonna add a column of 1's to the original data and include the bias term in the weights w.
+random values x = np.array([[4, 5],
+                           [6, 7],
+                           [8, 9]])
 '''
 x=np.random.randn(N,D)
 #an array in numpy is only one dimensional and we need it to be 2 dimensional in order to have n rows and 1 column
+'''
+ones:
+[[1]
+ [1]
+ [1]]
+'''
 ones = np.array([[1]*N]).T
 #so now we are gonna concatinate this vector of one's to my original dataset
+'''
+Xb:
+[[1 4 5]
+ [1 6 7]
+ [1 8 9]]
+'''
 Xb = np.concatenate((ones,x), axis=1)
 #so now I am gonna randomely initialize the weight vector
+'''
+w:
+[ 0.49671415 -0.1382643   0.64768854]
+'''
 w = np.random.randn(D+1)
 
 '''
