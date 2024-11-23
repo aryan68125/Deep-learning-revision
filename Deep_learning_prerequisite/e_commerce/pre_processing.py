@@ -13,7 +13,7 @@ def get_data():
    #read the first few entries in the dataframe after reading the csv file
    '''df.head() will only work in a jupyter or google colab notebook.
     It won't show output in your terminal'''
-#    print(tabulate(df, headers='keys', tablefmt='psql'))
+   # print(tabulate(df, headers='keys', tablefmt='psql'))
 
    '''
    In this dataframe ecommerce_data.csv the user_action column is our target and every other
