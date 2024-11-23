@@ -24,8 +24,8 @@ def get_data():
    '''
    The histogram shows the distribution of values in the column time_of_day in the dataframe
    '''
-#    df['time_of_day'].plot(kind='hist')
-#    plot.pyplot.show()
+   df['time_of_day'].plot(kind='hist')
+   plot.pyplot.show()
 
    '''
    It's much more easier to work with numpy arrays. hence we have to convert this 
@@ -41,6 +41,11 @@ def get_data():
    but reality they are not the same. The reason they are not the same is because 
    df.as_matrix() --> does not return an actual matrix object it returns a numpy array
    np.asmatrix(df) --> it returns an actual matrix
+   
+   In the older code you may see that the data frame is being converted using 
+   df.as_matrix()
+   but in the newer code you will have to use 
+   data = df.to_numpy() and not np.asmatrix(df)
    '''
    data = df.to_numpy()
 
